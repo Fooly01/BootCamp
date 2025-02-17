@@ -1,0 +1,6 @@
+
+
+4. AllChars - Verwenden von iterate (Chars selbst können als Seed verwendet werden)
+5. Faculty - Verwenden von reduce
+6. LetterNoMoreThan - String zu einem Stream umwandeln und Collector.groupingBy verwenden
+7. Powers - Verwenden von Math.pow(), in einem iterate lösbar

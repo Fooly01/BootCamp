@@ -5,11 +5,11 @@ import java.util.*;
 
 /**
  * Eine HashMap, welche als Schlüssel eine weitere HashMap hat.
- * <p>
- * <p>
+ *
+ *
  * 1) Vervollständigen Sie die folgenden Methoden:
- * <p>
- * 2) Fügen sie weitere sinnvolle Methoden hinzu (für Tipps DuppelHashMapTipps lesen)
+ *
+ * 2) Fügen sie weitere sinnvolle Methoden hinzu
  */
 public class DuppelHashMap<T, U, V> implements Map<U, V> {
 
@@ -33,7 +33,7 @@ public class DuppelHashMap<T, U, V> implements Map<U, V> {
 
     @Override
     public boolean containsValue(Object value) {
-//ToDo: Implement
+        //ToDo: Implement
         throw new IllegalStateException("Not yet implemented");
     }
 

@@ -1,14 +1,19 @@
+Für die erste Woche ist geplant, nur die Klausuraufgaben zu wiederholen und ein paar weitere Stream aufgaben zu üben.
 
-
-Für die erste Woche gibt es 2 Collection Aufgaben:
+Es gibt 2 Collection Aufgaben:
     1. NullTreeSet aus der Klausur
     2. Eine DoppelMap(die ihr maybe schon aus den Übungen kennt)
 
 Und 6 Stream Aufgaben:
     1-3. Aus der Klausur
-    4.
-    5.
-    6.
+    4. AllChars - Ausgabe alle Kleinbuchstaben von a-z ausgegeben werden sollen
+    5. Faculty - Berechnen der Fakultät einer Zahl
+    6. LetterNoMoreThan - Überprüfung eines Strings auf Anforderungen
+    7. Powers - Berechnen aller Potenzen zur Basis 2 von 0 bis n
+
+    Wenn Tipps benötigt werden, einfach die dazugehörige Textdatei anschauen.
+
+Und die IO Aufgabe auch aus der Klausur.
 
 Als Bonusaufgabe:
-    Code testen und mal schauen ob alles funktionert, ansonsten lad ich am Ende der Woche paar eigene Tests hoch.
+    Code testen und schauen ob alles funktionert, ansonsten lad ich am Ende der Woche paar eigene Tests hoch.

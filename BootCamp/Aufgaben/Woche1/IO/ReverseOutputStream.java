@@ -15,21 +15,25 @@ public class ReverseOutputStream extends OutputStream {
 
     @Override
     public void write(int bite) throws IOException {
+        //ToDo: Implement
         throw new IllegalStateException("Not yet implemented");
     }
 
     @Override
     public void write(byte[] buffer) throws IOException {
+        //ToDo: Implement
         throw new IllegalStateException("Not yet implemented");
     }
 
     @Override
     public void write(byte[] buffer, int start, int count) throws IOException {
+        //ToDo: Implement
         throw new IllegalStateException("Not yet implemented");
     }
 
     @Override
     public void close() throws IOException {
+        //ToDo: Implement
         throw new IllegalStateException("Not yet implemented");
     }
 }

@@ -11,6 +11,7 @@ import java.util.TreeSet;
  */
 
 public class NullTreeSet<T> extends TreeSet<T> {
+
     @Override
     public int size() {
         //ToDo: Implement
