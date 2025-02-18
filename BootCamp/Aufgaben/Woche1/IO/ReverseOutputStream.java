@@ -1,5 +1,6 @@
 package Aufgaben.Woche1.IO;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
@@ -13,27 +14,40 @@ import java.io.OutputStream;
 
 public class ReverseOutputStream extends OutputStream {
 
+    private final OutputStream out;
+    private final ByteArrayOutputStream buffer;
+
+    public ReverseOutputStream(OutputStream out) {
+        this.out = out;
+        this.buffer = new ByteArrayOutputStream();
+    }
+
     @Override
     public void write(int bite) throws IOException {
         //ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        buffer.write(bite);
     }
 
     @Override
     public void write(byte[] buffer) throws IOException {
         //ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        this.buffer.write(buffer);
     }
 
     @Override
     public void write(byte[] buffer, int start, int count) throws IOException {
         //ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        this.buffer.write(buffer, start, count);
     }
 
     @Override
     public void close() throws IOException {
         //ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        byte[] data = this.buffer.toByteArray();
+        for(int index = data.length - 1; index >= 0; index--){
+            out.write(data[index]);
+        }
+        out.flush();
+        out.close();
     }
 }

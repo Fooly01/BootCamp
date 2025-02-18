@@ -1,5 +1,7 @@
 package Aufgaben.Woche1.Streams.Bonus;
 
+import java.util.stream.Stream;
+
 public class Faculty {
 
     /**
@@ -7,7 +9,8 @@ public class Faculty {
      */
 
     public int faculty(int facultyOf){
-        throw new IllegalStateException("Not yet implemented");
+        return Stream.iterate(1, i -> i <= facultyOf, i -> ++i)
+                .reduce(1, (a, b) -> a * b);
     }
 
 }

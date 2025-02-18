@@ -1,6 +1,9 @@
 package Aufgaben.Woche1.Streams.Klausur;
 
+import java.util.Arrays;
 import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public record PlayingCard(Suit suit, Rank rank) {
 
@@ -21,7 +24,14 @@ public record PlayingCard(Suit suit, Rank rank) {
      * @return Eine Menge aller Spielkarten.
      */
     public static Set<PlayingCard> all() {
-        throw new IllegalStateException("Not yet implemented");
+        Stream<PlayingCard> standardCards = Arrays
+                .stream(Suit.values())
+                .flatMap(
+                        suit -> Arrays.stream(Rank.values())
+                        .map(rank -> new PlayingCard(suit, rank)));
+
+        return Stream.concat(standardCards, Stream.of(JOKER))
+                .collect(Collectors.toSet());
     }
 }
 

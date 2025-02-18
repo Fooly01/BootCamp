@@ -1,5 +1,8 @@
 package Aufgaben.Woche1.Streams.Bonus;
 
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
 public class LettersNoMoreThan {
 
 
@@ -9,7 +12,12 @@ public class LettersNoMoreThan {
      */
 
     public boolean evaluate(String word, int maxAllowed) {
-        throw new IllegalStateException("Not yet implemented");
+        return word.chars()
+                .boxed()
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+                .values()
+                .stream()
+                .allMatch(count -> count <= maxAllowed);
     }
 }
 
