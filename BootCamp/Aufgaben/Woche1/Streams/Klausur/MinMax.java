@@ -15,7 +15,9 @@ public class MinMax {
      */
 
     public static int[] find(Stream<Integer> numbers) {
-        throw new IllegalStateException("Not yet implemented");
+        return numbers
+                .map(i -> new int[]{i, i})
+                .reduce(new int[]{Integer.MAX_VALUE, Integer.MIN_VALUE}, (first, second) -> new int[]{Math.min(first[0], second[0]), Math.max(first[1], second[1])});
     }
 }
 

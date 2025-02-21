@@ -1,51 +1,72 @@
 package Aufgaben.Woche1.Collections;
+
 import java.util.TreeSet;
 
 /**
- *
  * Ein TreeSet erlaubt kein Element null.
  * Erstellen Sie eine Klasse `NullTreeSet`, die von `TreeSet` ableitet,
  * aber auch null als Element akzeptiert. Verwenden Sie keinen Comparator.
- *
+ * <p>
  * Vervollständigen Sie die folgenden Methoden:
  */
 
 public class NullTreeSet<T> extends TreeSet<T> {
 
+    private boolean hasNull = false;
+
     @Override
     public int size() {
-        //ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        return hasNull ? 1 + super.size() : super.size();
     }
 
     @Override
     public boolean isEmpty() {
-        //ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        return super.isEmpty() && !hasNull;
     }
 
     @Override
     public void clear() {
-        //ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        hasNull = false;
+        super.clear();
     }
 
     @Override
     public boolean contains(Object something) {
-        //ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        boolean returnValue = false;
+        if (something == null) {
+            returnValue = hasNull;
+        } else {
+            returnValue = super.contains(something);
+        }
+        return returnValue;
     }
 
     @Override
     public boolean add(T element) {
-        //ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        boolean added = false;
+        if (element == null) {
+            hasNull = true;
+            added = true;
+        } else {
+            added = super.add(element);
+        }
+        return added;
     }
 
     @Override
     public boolean remove(Object something) {
-        //ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        boolean returnValue = false;
+        if (something == null) {
+            if(hasNull){
+                hasNull = false;
+                returnValue = true;
+            } else {
+                returnValue = false;
+            }
+        } else {
+            returnValue = super.remove(something);
+        }
+        return returnValue;
     }
 
 }

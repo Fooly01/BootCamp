@@ -1,6 +1,7 @@
 package Aufgaben.Woche1.Streams.Klausur;
 
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class ValueCounter {
 
@@ -10,7 +11,14 @@ public class ValueCounter {
      */
 
     public static <K, V> int maxFound(Map<K, V> map) {
-        throw new IllegalStateException("Not yet implemented");
+        return map
+                .values()
+                .stream()
+                .collect(Collectors.groupingBy(i -> i, Collectors.counting()))
+                .values()
+                .stream()
+                .mapToInt(Math::toIntExact)
+                .reduce(0, Math::max);
     }
 }
 
