@@ -2,6 +2,7 @@ package Aufgaben.Woche1.IO;
 
 import java.io.IOException;
 import java.io.OutputStream;
+import java.nio.ByteBuffer;
 
 /**
  * IO - ReverseOutputStream
@@ -15,25 +16,34 @@ public class ReverseOutputStream extends OutputStream {
 
     @Override
     public void write(int bite) throws IOException {
-        //ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        byte[] biteArray = ByteBuffer.allocate(4).putInt(bite).array();
+        byte[] reversedBiteArray = new byte[biteArray.length];
+        for (int i = 0; i < biteArray.length; i++) {
+            reversedBiteArray[i] = biteArray[(biteArray.length-1) - i];
+        }
+        super.write(reversedBiteArray);
     }
 
     @Override
     public void write(byte[] buffer) throws IOException {
-        //ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        byte[] reversedBuffer = new byte[buffer.length];
+        for (int i = 0; i < buffer.length; i++) {
+            reversedBuffer[i] = buffer[(buffer.length-1) - i];
+        }
+        super.write(reversedBuffer);
     }
 
     @Override
     public void write(byte[] buffer, int start, int count) throws IOException {
-        //ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        byte[] reversedBuffer = new byte[count];
+        for (int i = start; i < start + count; i++) {
+            reversedBuffer[i] = buffer[(buffer.length-1) - i];
+        }
+        super.write(reversedBuffer);
     }
 
     @Override
     public void close() throws IOException {
-        //ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        super.close();
     }
 }
