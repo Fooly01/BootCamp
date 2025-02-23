@@ -1,6 +1,7 @@
 package Aufgaben.Woche1.Streams.Bonus;
 
 import java.util.List;
+import java.util.stream.Stream;
 
 public class AllChars {
 
@@ -9,6 +10,7 @@ public class AllChars {
      * Bsp.: abcdefghijklmnopqrstuvwxyz
      */
     public List<Character> smallLetters(){
-        throw new IllegalStateException("Not yet implemented");
+        return Stream.iterate('a', x -> x <= 'z', x -> ++x )
+                .toList();
     }
 }
