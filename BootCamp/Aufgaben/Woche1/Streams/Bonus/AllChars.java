@@ -13,8 +13,4 @@ public class AllChars {
         return Stream.iterate('a', i -> i<='z', i -> ++i).toList();
     }
 
-    //als Tests extrahieren
-    public static void main(String[] args) {
-        System.out.println(smallLetters());
-    }
 }

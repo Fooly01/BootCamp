@@ -15,12 +15,6 @@ public class Faculty {
     }
 
 
-    //als Tests extrahieren
-    public static void main(String[] args) {
-        System.out.println(faculty(5));
-        System.out.println(faculty(3));
-        System.out.println(faculty(27));
-        System.out.println(faculty(-1));
-    }
+
 
 }

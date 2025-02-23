@@ -20,5 +20,4 @@ public class PlayingCardTest {
         }
         assertTrue(all().contains(JOKER));
     }
-
 }
