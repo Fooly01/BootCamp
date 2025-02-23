@@ -11,41 +11,50 @@ import java.util.TreeSet;
  */
 
 public class NullTreeSet<T> extends TreeSet<T> {
+    boolean hasNull = false;
 
     @Override
     public int size() {
-        //ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        return super.size() + (hasNull ? 1 : 0);
     }
 
     @Override
     public boolean isEmpty() {
-        //ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        return super.isEmpty() && !hasNull;
     }
 
     @Override
     public void clear() {
-        //ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        super.clear();
+        hasNull = false;
     }
 
     @Override
     public boolean contains(Object something) {
-        //ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        return something == null ? hasNull: super.contains(something);
     }
 
     @Override
     public boolean add(T element) {
-        //ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        boolean result;
+        if (element != null) {
+            result = super.add(element);
+        } else {
+            hasNull = true;
+            result = true;
+        }
+        return result;
     }
 
     @Override
     public boolean remove(Object something) {
-        //ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        boolean result;
+        if (something == null) {
+            result = hasNull;
+            hasNull = false;
+        } else {
+            result = super.remove(something);
+        }
+        return result;
     }
-
 }
