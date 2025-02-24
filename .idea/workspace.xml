@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="454c2f5a-c9c7-4053-9372-fe6b8b80a733" name="Changes" comment="tests angepasst">
+      <change afterPath="$PROJECT_DIR$/Tests/UploadedTests/Woche1/Streams/Klausur/ValueCounterTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="module" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="FooLy" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Fooly01&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Fooly01/BootCamp.git&quot;,
+    &quot;accountId&quot;: &quot;816c1fec-d353-42df-8c26-d1c026c3b9a6&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2t2I3mNFhPjaDnIFRffQHPcMJKB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AllChars.executor": "Run",
+    "Application.Faculty.executor": "Run",
+    "Application.LettersNoMoreThan.executor": "Run",
+    "Application.Powers.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "true",
+    "JUnit.AllCharsTest.testAllChars.executor": "Run",
+    "JUnit.FacultyTest.maifFacultyTest.executor": "Run",
+    "JUnit.LettersNotMoreThanTest.testAllChars.executor": "Run",
+    "JUnit.MinMaxTest.executor": "Run",
+    "JUnit.MinMaxTest.testMinMax.executor": "Run",
+    "JUnit.MinMaxTest.testMinMax2.executor": "Run",
+    "JUnit.MinMaxTest.testMinMax4.executor": "Run",
+    "JUnit.NullTreeSetTest.RemoveNotAvailableTest.executor": "Run",
+    "JUnit.NullTreeSetTest.RemoveTest.executor": "Run",
+    "JUnit.NullTreeSetTest.addNullTest.executor": "Run",
+    "JUnit.NullTreeSetTest.addNumberTest.executor": "Coverage",
+    "JUnit.NullTreeSetTest.addTest.executor": "Run",
+    "JUnit.NullTreeSetTest.clearTest.executor": "Run",
+    "JUnit.NullTreeSetTest.executor": "Coverage",
+    "JUnit.NullTreeSetTest.removeNullTest.executor": "Run",
+    "JUnit.NullTreeSetTest.removeNullWhenNotAvailableTest.executor": "Run",
+    "JUnit.NullTreeSetTest.testNullTreeSet.executor": "Run",
+    "JUnit.PlayingCardTest.allCardsContained.executor": "Run",
+    "JUnit.PlayingCardTest.allClubsContained.executor": "Run",
+    "JUnit.PlayingCardTest.executor": "Run",
+    "JUnit.PlayingCardTest.testPlayingCard.executor": "Run",
+    "JUnit.PowersTest.testPowers.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/FooLy/IdeaProjects/BootCamp/Tests/UploadedTests",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\FooLy\IdeaProjects\BootCamp\Tests\UploadedTests" />
+      <recent name="C:\Users\FooLy\IdeaProjects\BootCamp\Tests\UploadedTests\Woche1" />
+      <recent name="C:\Users\FooLy\IdeaProjects\BootCamp\BootCamp\Lösungen\Woche1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\FooLy\IdeaProjects\BootCamp" />
+      <recent name="C:\Users\FooLy\IdeaProjects\BootCamp\Tests\UploadedTests\Woche1\Collections" />
+      <recent name="C:\Users\FooLy\IdeaProjects\BootCamp\Tests\UploadedTests\Woche1" />
+      <recent name="C:\Users\FooLy\IdeaProjects\BootCamp\BootCamp" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Aufgaben.Woche1.Collections" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.AllCharsTest.testAllChars">
+    <configuration name="AllCharsTest.testAllChars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BootCamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UploadedTests.Woche1.Streams.Bonus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UploadedTests.Woche1.Streams.Bonus" />
+      <option name="MAIN_CLASS_NAME" value="UploadedTests.Woche1.Streams.Bonus.AllCharsTest" />
+      <option name="METHOD_NAME" value="testAllChars" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FacultyTest.maifFacultyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BootCamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UploadedTests.Woche1.Streams.Bonus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UploadedTests.Woche1.Streams.Bonus" />
+      <option name="MAIN_CLASS_NAME" value="UploadedTests.Woche1.Streams.Bonus.FacultyTest" />
+      <option name="METHOD_NAME" value="maifFacultyTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LettersNotMoreThanTest.testAllChars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BootCamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UploadedTests.Woche1.Streams.Bonus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UploadedTests.Woche1.Streams.Bonus" />
+      <option name="MAIN_CLASS_NAME" value="UploadedTests.Woche1.Streams.Bonus.LettersNotMoreThanTest" />
+      <option name="METHOD_NAME" value="testAllChars" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayingCardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BootCamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UploadedTests.Woche1.Streams.Klausur.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UploadedTests.Woche1.Streams.Klausur" />
+      <option name="MAIN_CLASS_NAME" value="UploadedTests.Woche1.Streams.Klausur.PlayingCardTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PowersTest.testPowers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BootCamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UploadedTests.Woche1.Streams.Bonus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UploadedTests.Woche1.Streams.Bonus" />
+      <option name="MAIN_CLASS_NAME" value="UploadedTests.Woche1.Streams.Bonus.PowersTest" />
+      <option name="METHOD_NAME" value="testPowers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PowersTest.testPowers" />
+        <item itemvalue="JUnit.PlayingCardTest" />
+        <item itemvalue="JUnit.LettersNotMoreThanTest.testAllChars" />
+        <item itemvalue="JUnit.FacultyTest.maifFacultyTest" />
+        <item itemvalue="JUnit.AllCharsTest.testAllChars" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.24807.4" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.24807.4" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="454c2f5a-c9c7-4053-9372-fe6b8b80a733" name="Changes" comment="" />
+      <created>1739543545776</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739543545776</updated>
+      <workItem from="1739543546831" duration="4085000" />
+      <workItem from="1739575586447" duration="55000" />
+      <workItem from="1739809638310" duration="8927000" />
+      <workItem from="1739823973238" duration="738000" />
+      <workItem from="1739885407481" duration="566000" />
+      <workItem from="1739892075345" duration="2035000" />
+      <workItem from="1740148517917" duration="18762000" />
+      <workItem from="1740400254366" duration="854000" />
+      <workItem from="1740401136316" duration="411000" />
+      <workItem from="1740401691075" duration="196000" />
+      <workItem from="1740401893097" duration="30000" />
+      <workItem from="1740401928621" duration="121000" />
+      <workItem from="1740402067899" duration="8000" />
+      <workItem from="1740402084299" duration="1551000" />
+    </task>
+    <task id="LOCAL-00001" summary="i love chicken nuggies.">
+      <option name="closed" value="true" />
+      <created>1739546880038</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739546880038</updated>
+    </task>
+    <task id="LOCAL-00002" summary="i love chicken nuggies.">
+      <option name="closed" value="true" />
+      <created>1739822517095</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739822517095</updated>
+    </task>
+    <task id="LOCAL-00003" summary="errors fixed">
+      <option name="closed" value="true" />
+      <created>1739885649074</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1739885649074</updated>
+    </task>
+    <task id="LOCAL-00004" summary="errors fixed">
+      <option name="closed" value="true" />
+      <created>1739885758350</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1739885758350</updated>
+    </task>
+    <task id="LOCAL-00005" summary="done">
+      <option name="closed" value="true" />
+      <created>1739893514011</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1739893514011</updated>
+    </task>
+    <task id="LOCAL-00006" summary="done">
+      <option name="closed" value="true" />
+      <created>1740170737682</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1740170737682</updated>
+    </task>
+    <task id="LOCAL-00007" summary="done">
+      <option name="closed" value="true" />
+      <created>1740277607707</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1740277607707</updated>
+    </task>
+    <task id="LOCAL-00008" summary="tests angepasst">
+      <option name="closed" value="true" />
+      <created>1740402798747</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1740402798747</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/FooLy" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="i love chicken nuggies." />
+    <MESSAGE value="errors fixed" />
+    <MESSAGE value="done" />
+    <MESSAGE value="tests angepasst" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests angepasst" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BootCamp$NullTreeSetTest_addNumberTest.ic" NAME="NullTreeSetTest.addNumberTest Coverage Results" MODIFIED="1740150723641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>UploadedTests.Woche1.Collections.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/BootCamp$NullTreeSetTest.ic" NAME="NullTreeSetTest Coverage Results" MODIFIED="1740150995108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>UploadedTests.Woche1.Collections.*</FILTER>
+      <FILTER>Aufgaben.Woche1.Collections.NullTreeSet</FILTER>
+    </SUITE>
+  </component>
+</project>
