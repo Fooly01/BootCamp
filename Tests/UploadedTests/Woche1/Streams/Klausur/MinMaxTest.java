@@ -1,12 +1,12 @@
 package UploadedTests.Woche1.Streams.Klausur;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 import static Aufgaben.Woche1.Streams.Klausur.MinMax.find;
-import static org.junit.jupiter.api.Assertions.*;
 
 public class MinMaxTest {
 

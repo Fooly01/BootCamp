@@ -1,12 +1,13 @@
 package UploadedTests.Woche1.Streams.Bonus;
 
 import Aufgaben.Woche1.Streams.Bonus.LettersNoMoreThan;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 import java.util.Arrays;
 
 import static Aufgaben.Woche1.Streams.Bonus.Powers.powerOfTwo;
-import static org.junit.jupiter.api.Assertions.*;
+
 
 public class PowersTest {
 

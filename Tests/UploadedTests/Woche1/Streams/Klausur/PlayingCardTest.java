@@ -1,12 +1,11 @@
 package UploadedTests.Woche1.Streams.Klausur;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 import Aufgaben.Woche1.Streams.Klausur.PlayingCard;
-import org.junit.jupiter.api.Test;
 
 import static Aufgaben.Woche1.Streams.Klausur.PlayingCard.*;
-import static Aufgaben.Woche1.Streams.Klausur.PlayingCard.Rank.*;
-import static Aufgaben.Woche1.Streams.Klausur.PlayingCard.Suit.*;
-import static org.junit.jupiter.api.Assertions.*;
+
 
 public class PlayingCardTest {
     @Test

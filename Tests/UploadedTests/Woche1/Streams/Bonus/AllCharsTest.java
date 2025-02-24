@@ -1,9 +1,9 @@
 package UploadedTests.Woche1.Streams.Bonus;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import static Aufgaben.Woche1.Streams.Bonus.AllChars.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.*;
 
 public class AllCharsTest {
 
