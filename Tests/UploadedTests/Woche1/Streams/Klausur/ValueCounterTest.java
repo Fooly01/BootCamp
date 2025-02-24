@@ -13,15 +13,15 @@ public class ValueCounterTest {
     public void maxFoundTest() {
         Map<Integer, String> sut = new HashMap<>();
 
-        assertEquals(maxFound(sut),0);
+        assertEquals(0, maxFound(sut));
 
         sut.put(1, "eins");
         sut.put(2, "zwei");
 
-        assertEquals(maxFound(sut),1);
+        assertEquals(1, maxFound(sut));
 
-        sut.put(1, "nochmal eins");
+        sut.put(2, "eins");
 
-        assertEquals(maxFound(sut),2);
+        assertEquals(2, maxFound(sut));
     }
 }
