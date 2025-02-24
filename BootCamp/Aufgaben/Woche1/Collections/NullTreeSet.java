@@ -44,10 +44,10 @@ public class NullTreeSet<T> extends TreeSet<T> {
     @Override
     public boolean add(T element) {
         boolean added = false;
-        if (element == null) {
+        if (element == null && !hasNull) {
             hasNull = true;
             added = true;
-        } else {
+        } else if (element != null) {
             added = super.add(element);
         }
         return added;
@@ -57,7 +57,7 @@ public class NullTreeSet<T> extends TreeSet<T> {
     public boolean remove(Object something) {
         boolean returnValue = false;
         if (something == null) {
-            if(hasNull){
+            if (hasNull) {
                 hasNull = false;
                 returnValue = true;
             } else {

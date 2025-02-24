@@ -8,7 +8,7 @@ import org.junit.Test;
 
 public class NullTreeSetTest {
 
-    private NullTreeSet<String> nullTreeSet;
+    private NullTreeSet<String> nullTreeSet = new NullTreeSet<>();
 
     @Test
     public void testSize_EmptySet() {
