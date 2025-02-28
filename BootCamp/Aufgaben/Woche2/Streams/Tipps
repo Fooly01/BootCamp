@@ -1,4 +1,8 @@
 Jede Aufgabe kann auf verschiedene Arten gelöst werden, hier sind nur ein paar grobe Ideen, falls man gar nicht weiter kommt.
+Wahlen:
+    - countVotes: groupingBy und entrySet verwenden
+    - evaluateChanges: entrySet verwenden, mit Map lösbar WICHTIG: bei der Berechnung Math.round verwenden (*10.0 um nachkomma zu bekommen) danach *10.0 zum typ casten und original Wert zu erhalten
+      -> Math.round('unterschied'*10.0)/10.0)) nicht vergessen zu einer HashMap zu konvertieren (2. Argument im collect)
 
 wordGroups:
     - topThreeLetters : Benutzen von flatMapToInt damit Buchstaben als Stream vorhanden sind, groupingBy und sorted verwenden
