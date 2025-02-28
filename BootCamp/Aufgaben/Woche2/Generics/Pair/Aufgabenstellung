@@ -1,0 +1,7 @@
+
+1) Definieren sie eine generische Klasse Pair, die zwei beliebige Objekte speichert
+   Die Typen der beiden Objekte sind unabhängig. Mit Gettern können die Lemente einem Pair wieder entnommen werden.
+   Bonus: Definieren Sie toString, equals und hashCode.
+
+2) Definieren Sie zwei generische Klassen FirstComparator und SecondComparator, die PPaare bezüglich des ersten beziehungsweise
+   zweiten Elements vergleichen. Beide Klassen implementieren das Interface Comparator.

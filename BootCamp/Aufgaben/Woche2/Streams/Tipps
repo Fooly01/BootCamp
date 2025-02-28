@@ -1,0 +1,12 @@
+Jede Aufgabe kann auf verschiedene Arten gelöst werden, hier sind nur ein paar grobe Ideen, falls man gar nicht weiter kommt.
+
+wordGroups:
+    - topThreeLetters : Benutzen von flatMapToInt damit Buchstaben als Stream vorhanden sind, groupingBy und sorted verwenden
+    - longestWordChain : verwenden von toLowerCase und substring (eine Möglichkeit mit .takeWhile)
+    - longestWordPerInitial : collect() benutzen
+    - roundedAverageWordLength: average() benutzen
+    - shortestWordContainingChar: min und comparingInt verwenden
+
+
+ListOfLists:
+    - maxDepth : instanceof List um Verschachtelungen zu finden und flatMap um tiefere Ebenen zu untersuchen

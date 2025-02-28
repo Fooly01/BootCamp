@@ -1,0 +1,27 @@
+Eine Ring-Queue ist ein Puffer mit einer festen kapazität. In einen Ringe-Queue kann man beliebig viele Elemente schieben.
+Sie werden hinten angefügt, bis die Kapazität der Ring-Queue erreicht ist. Dann wird das älteste Element stillschweigend mit den neuen Element überschrieben.
+Benutzen Sie zur Lösung dieser Aufgabe keine Klassen aus dem Collection-Framework.
+Definieren Sie eine generische KLasse RingQueue mit einem Konstruktor, der die Kapazität der Datenstruktur als int-Parameter akzeptiert.
+Definieren Sie einen weiteren Konstruktor, der eine beliebige Anzahl Elemente als Argumente akzeptiert und eine neue Ring-Queue mit diesen
+Elementen initialisiert. Die Anzahl der Argumente legt in diesem Fall auch gleichzeitig die Kapazität fest.
+Geben sie der Klasse über den Konstruktor hinaus noch die folgenden Methoden:
+
+    size: Anzahl der momentan enthaltenden Elemente. Ergebnis zwischen 0 - Kapazität (im Konstruktor festgelegt)
+
+    push: Schiebt ein neues Element in die Ring-Queue. Wenn die Ring-Queue bereits voll ist, wird dabei das älteste Element ersetzt. (size anpassen)
+
+    clear: Entleert die Ring-Queue
+
+    get: Akzeptiert einen Parameter n und liefert für n = 0 das zuletzt eingefügte Element, für n = 1 das als vorletztes eingefügte Element und so weiter (Pre-Conditions!)
+
+
+
+    Bonus: Schreiben Sie eine Anwendung, die das zwanzigste Element der Triple-Fibonacci Folge ausgibt
+
+    Triple-Fibonacci: f0 = f1 = f2 = 1
+                      fn = fn-1 + fn-2 + fn-3 -> fibonacci aber mit 3 Zahlen
+
+    Die jeweils letzten 3 Elemente werden in einer Ring-Queue gespeichert. In jedem Schritt werden die drei letzten Elemente der Folge addiert und ergeben ein neues Element.
+
+
+
