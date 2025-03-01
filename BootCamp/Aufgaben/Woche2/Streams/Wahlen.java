@@ -25,8 +25,9 @@ public class Wahlen {
     }
 
     /**
-     * Der Bundestag hat 630 Sitze, geben Sie an welche Partei wie viele Sitze bekommt (runden!)
+     * Der Bundestag hat 630 Sitze, geben Sie an welche Partei wie viele Sitze bekommt (runden! es gibt nur ganze Stühle)
      * (die echte Berechnung ist zwar bisschen anders, aber hier einfach nur prozentual Berechnen)
+     * 5% Hürde beachten!
      */
     public HashMap<String,Double> howManySeats(HashMap<String,Double> neuesWahlergebnis){
         //ToDo: Implement
@@ -36,7 +37,7 @@ public class Wahlen {
 
     /**
      * Übergeben wird eine Map mit den Wahlbeteiligungen pro Bundesland.
-     * Berechnen Sie die durchschnittliche Wahlbeteiligung über alle Bundesländer.
+     * Berechnen Sie die durchschnittliche Wahlbeteiligung über alle Bundesländer. Runden auf eine Nachkommastelle
      */
     public double averageParticipation(Map<String, Double> wahlbeteiligung) {
         //ToDo: Implement
