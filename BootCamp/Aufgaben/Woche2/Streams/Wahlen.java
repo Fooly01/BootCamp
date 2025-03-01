@@ -1,9 +1,11 @@
 package Aufgaben.Woche2.Streams;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Wahlen {
 
@@ -34,21 +36,31 @@ public class Wahlen {
     }
 
     /**
-     * Der Bundestag hat 630 Sitze, geben Sie an welche Partei wie viele Sitze bekommt (runden!)
+     * Der Bundestag hat 630 Sitze, geben Sie an welche Partei wie viele Sitze bekommt (runden! es gibt nur ganze Stühle)
      * (die echte Berechnung ist zwar bisschen anders, aber hier einfach nur prozentual Berechnen)
+     * 5% Hürde beachten!
      */
+
     public HashMap<String, Double> howManySeats(HashMap<String, Double> neuesWahlergebnis) {
-        //ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        return neuesWahlergebnis
+                .entrySet()
+                .stream()
+                .map(entry -> Map.entry(entry.getKey(),entry.getValue()>5.0? Math.round(((entry.getValue()/100))*630.0):0.0))
+                .collect(Collectors.toMap(entry -> entry.getKey(), entry -> entry.getValue(), (v1, v2) -> v1, HashMap::new));
     }
 
 
     /**
      * Übergeben wird eine Map mit den Wahlbeteiligungen pro Bundesland.
-     * Berechnen Sie die durchschnittliche Wahlbeteiligung über alle Bundesländer.
+     * Berechnen Sie die durchschnittliche Wahlbeteiligung über alle Bundesländer. Runden auf eine Nachkommastelle
      */
     public double averageParticipation(Map<String, Double> wahlbeteiligung) {
-        //ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        Double[] beteiligungsArray =  wahlbeteiligung
+                .values()
+                .stream()
+                .map(wert -> new Double[]{wert,1.0} )
+                .reduce(new Double[]{0.0,0.0},(first,second) -> new Double[] {first[0]+second[0],first[1]+1});
+
+        return Math.round(beteiligungsArray[0]/beteiligungsArray[1]*10.0)/10.0;
     }
 }
