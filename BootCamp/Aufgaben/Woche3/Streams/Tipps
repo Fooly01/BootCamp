@@ -1,0 +1,18 @@
+
+
+filterAndTransformNames: filter, map und sorted verwenden .matches um Anfangsbuchstaben zu überprüfen
+                        (^ um anfang des wortes festzulegen [] um eine wortgruppe anzugeben .* damit beliebig viele wiederholungen auch gefiltert werden)
+                        bsp.: string.matches("^[pq].*") -> true wenn beliebig viele p oder q's am anfang des wortes stehen
+
+countAndSortOccurrences: Collectors.groupingBy entrySet sorted(LongCompare) und limit verwenden(LinkedHashMap erhält EinfügeReihenfolge)
+
+calculateTemperatureStats: wenn man einen Stream aus Doublen hat gibt es eine intressante methode namens "summaryStatistics"
+
+groupWordsByFirstLetter: sorted mit einem Comparator verwenden .thenComparing zum anfügen mehrerer Eigenschaften. Gruppieren durch Collectors.groupingBy
+
+joinSortedNumbers: sorted, map und Collectors.joining verwenden
+
+findLongestWord: max mit Comparator (2 Vergleiche) und map verwenden
+
+sumOfPrimes: filtern mit Hilfsmethode und sum verwenden
+
