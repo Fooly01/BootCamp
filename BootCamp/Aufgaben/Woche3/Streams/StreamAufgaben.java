@@ -12,8 +12,12 @@ public class StreamAufgaben {
      * hänge die Länge des Namens an (bsp.: "Beispiel (8)") und sortiere sie alphabetisch.
      */
     public static List<String> filterAndTransformNames(List<String> names) {
-        // ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        return names
+                .stream()
+                .filter(n -> n.length() > 3 && !n.substring(0, 1).matches("^[AEIOU].*"))
+                .map(n -> n.toUpperCase() + " " + n.length())
+                .sorted()
+                .toList();
     }
 
     /**
@@ -22,8 +26,14 @@ public class StreamAufgaben {
      * gib eine Map mit den häufigsten drei Zahlen zurück, sortiert nach Häufigkeit absteigend.
      */
     public static Map<Integer, Long> countAndSortOccurrences(List<Integer> numbers) {
-        // ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        return numbers
+                .stream()
+                .collect(Collectors.groupingBy(n -> n, Collectors.counting()))
+                .entrySet()
+                .stream()
+                .sorted((a, b) -> Long.compare(a.getValue(), b.getValue()))
+                .limit(3)
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (a, b) -> a, LinkedHashMap::new));
     }
 
     /**
@@ -32,8 +42,13 @@ public class StreamAufgaben {
      * sowie den höchsten und niedrigsten Wert und gib diese als formatierte Zeichenkette zurück.
      */
     public static String calculateTemperatureStats(List<Double> temperatures) {
-        // ToDo: Implement, 1 ersetzen mit den richtigen Werten
-        return String.format("Durchschnitt: %.2f, Max: %.2f, Min: %.2f", 1);
+        DoubleSummaryStatistics stats =
+                temperatures
+                .stream()
+                .mapToDouble(a -> a)
+                .summaryStatistics();
+
+        return String.format("Durchschnitt: %.2f, Max: %.2f, Min: %.2f", stats.getAverage(), stats.getMax(), stats.getMin());
     }
 
     /**
@@ -42,8 +57,9 @@ public class StreamAufgaben {
      * Gruppiere die Wörter nach ihrer Anfangsbuchstaben und gib eine Map zurück.
      */
     public static Map<Character, List<String>> groupWordsByFirstLetter(List<String> words) {
-        // ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        return words.stream()
+                .sorted(Comparator.comparingInt(String::length).thenComparing(String::compareTo))
+                .collect(Collectors.groupingBy(word -> word.charAt(0), LinkedHashMap::new, Collectors.toList()));
     }
 
     /**
@@ -53,8 +69,12 @@ public class StreamAufgaben {
      * und jede Zahl in Klammern gesetzt ist.
      */
     public static String joinSortedNumbers(List<Integer> numbers) {
-        // ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        return numbers
+                .stream()
+                //Ausdruck im sorted unnötig, nur zum Verständnis
+                .sorted(Comparator.comparingInt(Integer::intValue))
+                .map(a -> "(" + a.toString() + ")")
+                .collect(Collectors.joining(", "));
     }
 
     /**
@@ -63,8 +83,11 @@ public class StreamAufgaben {
      * Falls es mehrere gibt, gib das alphabetisch erste zurück, ansonsten gebe zurück "Keine Wörter vorhanden".
      */
     public static String findLongestWord(List<String> words) {
-        // ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        return words
+                .stream()
+                .max(Comparator.comparingInt(String::length))
+                .map(word -> word + " (" + word.length() + ")")
+                .orElse("Keine Wörter vorhanden");
     }
 
     /**
@@ -73,13 +96,23 @@ public class StreamAufgaben {
      * und berechne die Summe aller Primzahlen.
      */
     public static int sumOfPrimes(List<Integer> numbers) {
-        // ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        return numbers
+                .stream()
+                .filter(n -> isPrime(n))
+                .reduce(0, (a,b) -> a+b);
+        /* auch möglich:
+                .mapToInt(Integer::intValue)
+                .sum()
+        */
     }
 
     // Hilfsmethode zur Primzahlprüfung
     private static boolean isPrime(int num) {
-        // ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        for (int i = 2; i < num-1; i++) {
+            if (num % i == 0) {}
+                return false;
+        }
+        return true;
     }
+
 }
