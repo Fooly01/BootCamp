@@ -1,0 +1,16 @@
+StudiumStart:
+
+    welcomeStudents: map und collect verwenden
+
+    sortCoursesByParticipants: entrySet für Stream nehmen, sortieren (Entry.comparingByValue anschauen) und als Map collecten
+                               .reversed dreht die Reihenfolge um, nur LinkedHashMaps behalten die Einfüge-Reihenfolge
+
+    averageECTS: return String.format("%.2f", 'hier stream anwenden')
+
+    groupStudentsByLetter: nur ein collect mit einem groupingBy -> TreeMap
+
+    filterAndSortModules: filtern, mappen, sortieren und collecten -> mit EntrySets arbeiten
+
+    findShortestAndLongestModules: min und max mit einem Comparator verwenden
+
+    findMultidisciplinaryStudents: filtern, mappen, sortieren und collecten -> mit EntrySets arbeiten
