@@ -4,7 +4,7 @@ filterAndTransformNames: filter, map und sorted verwenden .matches um Anfangsbuc
                         (^ um anfang des wortes festzulegen [] um eine wortgruppe anzugeben .* damit beliebig viele wiederholungen auch gefiltert werden)
                         bsp.: string.matches("^[pq].*") -> true wenn beliebig viele p oder q's am anfang des wortes stehen
 
-countAndSortOccurrences: Collectors.groupingBy entrySet sorted(LongCompare) und limit verwenden(LinkedHashMap erhält EinfügeReihenfolge)
+countAndSortOccurrences: Collectors.groupingBy entrySet sorted(Long.Compare) und limit verwenden(LinkedHashMap erhält EinfügeReihenfolge)
 
 calculateTemperatureStats: wenn man einen Stream aus Doublen hat gibt es eine intressante methode namens "summaryStatistics"
 
