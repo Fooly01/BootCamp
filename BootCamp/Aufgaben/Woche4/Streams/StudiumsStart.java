@@ -13,8 +13,10 @@ public class StudiumsStart {
      * Gib eine Liste mit diesen Strings zurück.
      */
     public static List<String> welcomeStudents(List<String> students) {
-        // ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        return students
+                .stream()
+                .map(word -> "Willkommen, " + word.toUpperCase())
+                .collect(Collectors.toList());
     }
 
     /**
@@ -23,8 +25,15 @@ public class StudiumsStart {
      * absteigend nach der Teilnehmerzahl und gib die sortierte Map zurück.
      */
     public static Map<String, Integer> sortCoursesByParticipants(Map<String, Integer> courses) {
-        // ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        return courses
+                .entrySet()
+                .stream()
+                .sorted(Map.Entry.<String, Integer>comparingByValue().reversed())
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey,
+                        Map.Entry::getValue,
+                        (a, b) -> a,
+                        LinkedHashMap::new));
     }
 
     /**
@@ -33,6 +42,7 @@ public class StudiumsStart {
      * ECTS-Punkte mit zwei Nachkommastellen.
      */
     public static String averageECTS(List<Integer> ectsPoints) {
+
         // ToDo: Implement
         throw new IllegalStateException("Not yet implemented");
     }
