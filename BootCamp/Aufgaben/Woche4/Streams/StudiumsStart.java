@@ -42,9 +42,11 @@ public class StudiumsStart {
      * ECTS-Punkte mit zwei Nachkommastellen.
      */
     public static String averageECTS(List<Integer> ectsPoints) {
-
-        // ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        return String.format("%.2f", ectsPoints
+                .stream()
+                .mapToInt(points -> points)
+                .average()
+                .orElse(0));
     }
 
     /**
@@ -53,8 +55,9 @@ public class StudiumsStart {
      * die die Buchstaben als Schlüssel und eine Liste der Namen als Wert enthält.
      */
     public static Map<Character, List<String>> groupStudentsByLetter(List<String> students) {
-        // ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        return students
+                .stream()
+                .collect(Collectors.groupingBy(name -> name.charAt(0), TreeMap::new, Collectors.toList()));
     }
 
     /**
@@ -63,8 +66,14 @@ public class StudiumsStart {
      * die mindestens 5 ECTS haben, sortiert nach Modulnamen.
      */
     public static List<String> filterAndSortModules(Map<String, Integer> modules) {
-        // ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        return modules
+                .entrySet()
+                .stream()
+                .sorted()//Map.Entry::getKey)? //position egal
+                .filter(module -> module.getValue() >= 5)
+                .map(Map.Entry::getKey)
+                .toList();
+
     }
 
     /**
@@ -74,12 +83,13 @@ public class StudiumsStart {
      * Rückgabeformat: "Kürzestes: [Titel] (X Zeichen), Längstes: [Titel] (Y Zeichen)"
      */
     public static String findShortestAndLongestModule(List<String> modules) {
-        String shortest = "hier Stream andwenden";
+        String shortest = modules.stream().reduce("error", (first, second) -> first.length() >= second.length() ? first : second);
+        //or: String shortest = modules.stream().max(Comparator.comparingInt(String::length)).orElse("error");
 
-        String longest = "hier Stream anwenden";
+        String longest = modules.stream().reduce("error", (first, second) -> first.length() <= second.length() ? first : second);
+        //or: String shortest = modules.stream().min(Comparator.comparingInt(String::length)).orElse("error");
 
-        //0 mit richtigen Werten ersetzen
-        return String.format("Kürzestes: %s (%d Zeichen), Längstes: %s (%d Zeichen)", 0);
+        return String.format("Kürzestes: %s (%d Zeichen), Längstes: %s (%d Zeichen)", shortest, shortest.length(), longest, longest.length());
     }
 
     /**
@@ -88,8 +98,12 @@ public class StudiumsStart {
      * wie viele Fächer belegen. Gib eine Liste der Studierenden zurück, die mehr als zwei Fächer belegen.
      */
     public static List<String> findMultidisciplinaryStudents(Map<String, Integer> studentSubjects) {
-        // ToDo: Implement
-        throw new IllegalStateException("Not yet implemented");
+        return studentSubjects
+                .entrySet()
+                .stream()
+                .filter(entry -> entry.getValue() > 2)
+                .map(Map.Entry::getKey)
+                .toList();
     }
 }
 
